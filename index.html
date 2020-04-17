@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Cacao Chocolatier巧克力專賣</title>
+</head>
+
+<body>
+    <section>
+        <div class="front-logo">
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="./about.html">關於我們</a></li>
+                    <li><a href="./product.html">經典商品</a></li>
+                    <li><a href="./customized.html">客製服務</a></li>
+                    <li><a href="./contact.html">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        $(".menu").click(function () {
+            $(this).toggleClass('active');
+        });
+    </script>
+    <script src="js/vegas.min.js"></script>
+    <script>
+       $("#example, body").vegas({
+            delay: 4000,
+            shuffle: true,
+            overlay: true,
+            slides: [
+                { src: "./images/slider-images/slider1.jpg" },
+                { src: "./images/slider-images/slider2.jpg" },
+                { src: "./images/slider-images/slider3.jpg" },
+                { src: "./images/slider-images/slider4.jpg" },
+                { src: "./images/slider-images/slider5.jpg" },
+                { src: "./images/slider-images/slider6.jpg" },
+                { src: "./images/slider-images/slider7.jpg" },
+                { src: "./images/slider-images/slider8.jpg" },
+            ],
+            animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ],
+            overlay: 'vegas/overlays/08.png',
+        })
+        $(".main-nav a").click(function(event){
+            event.stopPropagation();
+        })
+
+        $(".front-logo").click(function(){
+            location.href="about.html";
+        })
+    </script>
+</body>
+
+</html>

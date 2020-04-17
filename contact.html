@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Contact Us | Cacao Chocolatier巧克力專賣</title>
+</head>
+
+<body>
+    <header>
+        <div class="front-logo-top" id="area">
+            <a href="index.html"><img src="images/icon/logo-b.svg" alt=""></a>
+        </div>
+        <div>
+            <ul class="main-selector list-unstyle d-flex justify-content-center">
+                <li><a href="./about.html">關於我們</a></li>
+                <li><a href="./product.html">經典商品</a></li>
+                <li><a href="./customized.html">客製服務</a></li>
+                <li><a href="./contact.html">聯絡我們</a></li>
+            </ul>
+            <div class="menu transition">
+                <div class="bar bar1 transition"></div>
+                <div class="bar bar2 transition"></div>
+                <div class="bar bar3 transition"></div>
+                <ul class="transition">
+                    <li><a href="./about.html" class="transition">關於我們</a></li>
+                    <li><a href="./product.html" class="transition">經典商品</a></li>
+                    <li><a href="./customized.html" class="transition">客製服務</a></li>
+                    <li><a href="./contact.html" class="transition">聯絡我們</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="wrapper">
+        <img class="cover-fit" src="images/contact-index.jpg" alt="">
+    </section>
+
+    <section class="region">
+    </section>
+
+    <section>
+        <div class="title-contact">
+            <h2>聯絡我們 | Contact Us</h2>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-mobile-wrap">
+            <div class="pic-open">
+                <img class="cover-fit" src="images/open.jpg" alt="">
+            </div>
+            <div class="contact-box">
+                <div class="contact-box-text">
+                    <h1 class="animated infinite flash slower">--- FIND JOY HERE ---</h1>
+                    <p>門市地址：台北市大安區復興南路一段390號2樓<br>
+                        門市電話：+886-02-6631-6666<br>
+                        門市傳真：+886-02-6631-6667<br>
+                        營業時間：週一~週五09:30~18:30<br>
+                        信箱：info@cacao-chocolatier.com <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div><a href="#area" class="top"><i class="fas fa-angle-double-up"></i></a></div>
+    </section>
+
+    <section class="region">
+    </section>
+
+    <div class="footer-line"></div>
+    <footer>
+        <div class="d-flex justify-content-center">
+            <div class="footer-logo">
+                <img src="images/icon/logo-b.svg" alt="">
+            </div>
+            <div class="footer-text">
+                <h2>Chocolate is the most fascinating language in the world,</h2>
+                <h2>telling a beautiful story...</h2>
+                <br>
+                <h3>Contact</h3>
+                <p>2F, No. 390, Section 1, Fuxing South Road, Daan District, Taipei City, Taiwan</p>
+                <p>+886-02-6631-6666</p>
+                <p>Mon~Fri 09:30~18:30</p>
+                <p>info@cacao-chocolatier.com</p>
+
+            </div>
+            <div class="subscribe-icon">
+                <h5>SUBSCRIBE TO Cacao Chocolatier</h5>
+                <div class="footer-icon-center">
+                    <a href="https://www.facebook.com" target="_blank"><img class="icon-bounce" src="images/icon/Facebook_icon.svg.png" alt=""></a>
+                    <a href="https://www.instagram.com" target="_blank"><img class="icon-bounce" src="images/icon/Instagram_logo_2016.svg.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-img">
+            <div class="copyright">
+                <h5>Copyright © 2020 Cacao Chocolatier. All Rights Reserved.</h5>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/all.min.js"></script>
+    <script>
+        $(".menu").click(function () {
+            $(this).toggleClass('active');
+        });
+
+        $(".top").click(function(event){
+        event.preventDefault();
+        console.log("top")
+        $("html, body").animate({
+            scrollTop: 0
+        }, 500)
+    })
+    </script>
+</body>
+
+</html>
